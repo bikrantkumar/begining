@@ -29,3 +29,10 @@ address{
 .navbar-dark{
     background-color: #512DA8;
 }
+.tab-content{
+    padding: 10px;
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    background-color: aliceblue;
+}
