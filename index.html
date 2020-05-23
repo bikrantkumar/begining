@@ -46,7 +46,7 @@
                 </div>
                 <div class="col-12 col-sm-3 align-self-center">
                     
-                    <a class="btn btn-warning text-white" href="#forms" ><h2>Reserve Table</h2></a>
+                    <a class="btn btn-warning text-white" data-toggle="tooltip" data-html="true" title="Or Call us at  <br><strong>+852 12345678</strong>" data-placement="bottom" href="#forms" ><h2>Reserve Table</h2></a>
                 </div>
             </div>
         </div>
@@ -192,10 +192,18 @@
            </div>
         </div>
     </footer>
+    
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle = "tooltip"]').tooltip();
+        });
+        
+    </script>
+    
 </body>
 
 </html>
