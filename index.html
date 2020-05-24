@@ -24,16 +24,49 @@
             </button>
             <a class ="navbar-brand mr-auto" href ="#"><img src="img/logo.png" height= "30" width ="41"></a>
             <div id="Navbar" class= "collapse navbar-collapse">
-                <ul class ="navbar-nav mr-auto">
+                <ul class ="navbar-nav mr-auto row">
+                    
                     <li class="nav-item"><a class= "nav-link active" href ="#"><span class ="fa fa-home fa-lg"></span> Home</a></li>
                     <li class="nav-item"><a class= "nav-link " href ="./aboutus.html"><span class ="fa fa-info fa-lg"></span>About</a></li>
                     <li class="nav-item"><a class= "nav-link" href ="#"><span class ="fa fa-list fa-lg"></span>Menu</a></li>
                     <li class="nav-item"><a class= "nav-link" href ="./contactus.html"><span class ="fa fa-address-card fa-lg"></span>Contact</a></li>
+                    <span class="navbar-text mr-auto" ><a data-toggle="modal" data-target ="#loginmodal"><span class = "fa fa-sign-in"></span>LogIn</a></span>
                 </ul>
             </div>  
         </div>
     </nav>
 
+    <div id ="loginmodal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role = "content">
+            <div class= "modal-content">
+                <div class="modal-header ">
+                    <h4 class="title ">LogIn</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                
+                <div class="modal-body">
+                    <form>
+                        <div class = "form-row">
+                            <div class="col-sm-4">
+                                <input type="text" placeholder="Enter your Email" class="form-control" id="Email"> 
+                            </div>
+                            <div class="col-sm-4">
+                                <input type="password" placeholder="Enter password" class="form-control" id="password">
+                            </div>
+                            <div class="col-sm-auto">
+                                <input type="checkbox" id = "remember">
+                                <label for="remember">Remember me</label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <button class="btn btn-primary ml-auto btn-sm" data-dismiss="modal">submit</button>
+                            <button class="btn btn-secondary btn-sm ml-1" data-dismiss="modal">cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <header class = "jumbotron">
         <div class = "container">
             <div class = "row ">
