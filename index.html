@@ -22,6 +22,7 @@
             <button class ="navbar-toggler" type = "button" data-toggle ="collapse" data-target= "#Navbar">
                 <span class= "navbar-toggler-icon"></span>
             </button>
+            
             <a class ="navbar-brand mr-auto" href ="#"><img src="img/logo.png" height= "30" width ="41"></a>
             <div id="Navbar" class= "collapse navbar-collapse">
                 <ul class ="navbar-nav mr-auto row">
@@ -187,17 +188,26 @@
                             </div>
                             <div class="carousel-caption d-none d-md-block row ">
                                 <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
-                            </div>
+                            </div>   
+                        </div>
+                        <div class="btn-group " id = "carouselButton">
+                            <button class="btn btn-danger btn-sm" id="carouselPlay">
+                                <span class="fa fa-play"></span>
+                            </button>
+                            <button class="btn btn-danger btn-sm" id="carouselPause">
+                                <span class="fa fa-pause"></span>
+                            </button>
+                        </div>
+                        </div>
+                            <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>   
                         </div>
                         
                     </div>
-                    <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </a>
-                    <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </a>   
-
                 </div>
             </div>
         </div>
@@ -297,6 +307,7 @@
             </div>
         </div>
         -->
+        
     </div>
 
     <footer class = "footer">
@@ -342,12 +353,33 @@
            </div>
         </div>
     </footer>
+   
     
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#mycarousel").carousel({interval:2000});
+            $("#carouselPause").click(function(){
+                $("#mycarousel").carousel('pause');
+            });
+            $("#carouselPlay").click(function(){
+                $("#mycarousel").carousel('cycle');
+            });
+            
+            /*
+            $("#carouselPause").click(function(){
+                $("#mycarousel").carousel("pause");
+            });
+            $("#carouselPlay").click(function(){
+                $("#mycarousel").carousel("play");
+            })*/
+        });
+    </script>
     
+
     
 </body>
 
