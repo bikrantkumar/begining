@@ -38,7 +38,7 @@ address{
 }
 
 body{
-    padding:50px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
     z-index:0;
 }
 
@@ -71,4 +71,20 @@ body{
     position: absolute;
     bottom: 0px;
     z-index: 1;
+}
+#logInButton{
+    right:50px;
+    position: absolute;
+    bottom: 20px;
+    z-index: 1;
+}
+.modal-body{
+    background-color: $background-pale;
+}
+.modal-header{
+    background-color: $background-dark;
+    color:#fffaf0;
+    .close{
+    color:#fffaf0;
+    }
 }

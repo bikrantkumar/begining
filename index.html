@@ -31,7 +31,7 @@
                     <li class="nav-item"><a class= "nav-link " href ="./aboutus.html"><span class ="fa fa-info fa-lg"></span>About</a></li>
                     <li class="nav-item"><a class= "nav-link" href ="#"><span class ="fa fa-list fa-lg"></span>Menu</a></li>
                     <li class="nav-item"><a class= "nav-link" href ="./contactus.html"><span class ="fa fa-address-card fa-lg"></span>Contact</a></li>
-                    <span class="navbar-text mr-auto" ><a data-toggle="modal" data-target ="#loginmodal"><span class = "fa fa-sign-in"></span>LogIn</a></span>
+                    <span class="navbar-text all" ><a id="logInButton"><span class = "fa fa-sign-in"></span>LogIn</a></span>
                 </ul>
             </div>  
         </div>
@@ -41,7 +41,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h2 class="title">Reserve Table</h2>
-                    <button type="button"  class="close" data-dismiss="modal">&times;</button>
+                    <button type="button"  class="close " data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
                     <form >
@@ -101,7 +101,7 @@
             <div class= "modal-content">
                 <div class="modal-header ">
                     <h4 class="title ">LogIn</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <button type="button" class="close " data-dismiss="modal">&times;</button>
                 </div>
                 
                 <div class="modal-body">
@@ -139,7 +139,7 @@
                 </div>
                 <div class="col-12 col-sm-3 align-self-center">
                     
-                    <a class="btn btn-warning text-white" data-toggle="modal" data-target="#formmodel" ><h2>Reserve Table</h2></a>
+                    <a class="btn btn-warning text-white" id="reserveButton"><h2>Reserve Table</h2></a>
                 </div>
             </div>
         </div>
@@ -357,7 +357,12 @@
     <script>
         $(document).ready(function(){
             $("#mycarousel").carousel({interval:2000});
-            
+            $("#reserveButton").click(function(){
+                $("#formmodel").modal("show");
+            });
+            $("#logInButton").click(function(){
+                $("#loginmodal").modal("show");
+            });
             $("#carouselButton").click(function(){
                 if ($("#carouselButton").children("span").hasClass('fa-pause')){
                     $("#mycarousel").carousel('pause');

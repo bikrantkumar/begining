@@ -52,3 +52,18 @@ body {
   position: absolute;
   bottom: 0px;
   z-index: 1; }
+
+#logInButton {
+  right: 50px;
+  position: absolute;
+  bottom: 20px;
+  z-index: 1; }
+
+.modal-body {
+  background-color: #D1C4E9; }
+
+.modal-header {
+  background-color: #512DA8;
+  color: #fffaf0; }
+  .modal-header .close {
+    color: #fffaf0; }
